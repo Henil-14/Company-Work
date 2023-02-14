@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Resume </title>
+    </head>
+    <style>                
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .container{
+           display: grid;
+           grid-template-areas: 'header header header header header header'
+                                'menu menu header header header header' ;
+            gap: 10px;
+            padding: 10px; 
+        }
+        #grid-container>div{
+            text-align: center;
+            padding: 20px 0;
+            font-size:30px;
+        }
+        .header{
+            height: 100px;
+            width: auto;
+            grid-area: header;
+            background-color: rgb(41, 40, 40);
+            text-align: center;
+            justify-content:space-around;
+            color: aliceblue;
+            padding: 15px;
+            font-size: larger;
+    
+
+        }
+     
+
+        .left{
+         grid-area: left;
+        height: 150%;
+        background-color: rgb(82, 82, 82);
+        padding: 6px 25px;
+            
+
+
+        }
+        #right{
+           
+            float: right ;
+           display: grid;
+           text-align: center;
+        }
+        #img{
+            height:100px ;
+            width: 100px;
+            margin-left: 100px;
+            float: left;
+
+        }
+    </style>
+    <body>
+        <section>
+        <div class="#container">
+           
+            <div class="header">
+                <div class="img">
+                    <img src="person.png" alt="image" id="img">
+                </div>
+                <div class="right">
+                    <h1>Henil Pithadiya</h1><br>
+                    <p>Trainee Software Engineer</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="left">
+                <ul>
+                    <li> <a href="">1</a></li>
+                    <li> <a href="">1</a></li>
+                    <li> <a href="">1</a></li>
+                </ul>
+            </div>
+        </section>
+        </div>
+    </body>
+</html>
