@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+}
+header
+{
+    background-color: lightgray;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid rgb(82, 79, 79);
+}
+header img
+{
+    height: 20px;
+    width: 20px;
+}
+.left
+{
+    float: left;
+    margin-left: 250px;
+}
+.right
+{
+    float: right;
+    margin-right: 300px;
+}
+.logo
+{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+.number
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 114, 114);
+    padding: 20px;
+    font-size: xx-large ;
+}
+ul li
+{
+    display: inline-block;
+    margin: 10px;    
+}
+.clear
+{
+    clear: both;    
+}
+nav
+{
+   align-items: center;
+   margin-left: 10px;
+}
+ul li a
+{
+    text-decoration: none;
+    color: rgb(116, 114, 114);
+    padding: 10px;
+    
+}
+a:hover
+{
+    background-color: orange;
+    transition: 2s;
+}
+.big-head
+{
+    
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    background-color: lightgray;
+    border: 1px solid rgb(82, 79, 79);
+    padding: 60px;
+    height: 200px;
+    /* flex-wrap: wrap; */
+}
+
+.big-head-child
+{
+    color: rgb(116, 114, 114);
+    width: 30%;
+    align-items: flex-start;
+    padding-left: 200px;
+    float: left;
+}
+.big-head h1,h2,p
+{
+    color: rgb(116, 114, 114);  
+}
+
+.big-head-child1
+{
+    float: right;
+    padding-right: 10%;
+}
+button
+{
+    background-color: orange;
+    border-radius: 10px;
+    border-color: orange;
+    color: white;
+    font-size: large;
+}
+.big-head-child1 button
+{
+    background-color: orange;
+    border-radius: 10px;
+    border-color: orange;
+    color: white;
+    font-size: large;
+    width: 350px;
+}
+.blue-part
+{
+    background-color: rgb(32, 161, 212);
+    height: 150px;
+    padding: 20px;;
+    
+}
+.blue-part h2
+{
+    color: white;
+}
+.big-head-child2
+{
+    color: rgb(116, 114, 114);
+    width: 40%;
+    padding-left: 250px;
+    float: left;
+}
+.big-head-child2 p
+{
+    color: white;
+}
+.design
+{
+    float: right;
+    padding-right: 20%;
+    padding-top: 2%;
+}
+.design button
+{
+    background-color: white;
+    color: rgb(32, 161, 212);
+    width: 200px;
+    height: 50px;
+    border-radius: 0px;
+    text-decoration: solid;
+
+}
+.image-part
+{
+    justify-content: space-evenly;
+    background-color: lightgray;
+    border: 1px solid rgb(82, 79, 79);
+    padding: 20px;
+    height: 300px;
+}
+.image-part img
+{
+    margin-left: 250px;
+    height: 300px;
+    width: 600px;
+}
+.big-head-child3
+{
+    float: right;
+    padding-right: 10%;
+    width: 40%;
+}
+.image-part button
+{
+    background-color: orange;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 0px;
+    text-decoration: solid;
+
+}
+.big-head-child3 h1
+{
+    color: rgb(116, 114, 114);
+}
+.image-flex-parent
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 90%;
+}
+.image-flex-child
+{
+    width: 200px;
+    color: rgb(116, 114, 114);;
+}
+.image-flex-child img
+{
+    width: 400px;
+    height: 300px;
+}
+.image-flex-child p
+{
+    width: 400px;
+}
+.learnmore
+{
+    padding: 30px;
+    margin-left: 45%;
+}
+.learnmore button
+{
+    background-color: orange;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 0px;
+    text-decoration: solid;
+}
+.footer-detail-flex
+{
+    background-color: rgb(151, 151, 151);
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-detail-flex-child
+{
+    height: 200px;
+    width: 180px ;
+}
+.footer-detail-flex-child p
+{
+    color: white;
+}
+footer
+{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: gray;
+    background-color: rgb(70, 67, 67);
+}
+
+
+.anchor-tag
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+    justify-content: center;
+}
+.anchor-tag-child
+{
+    height: auto;
+    width: auto;
+}
+.anchor-tag a
+{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+}

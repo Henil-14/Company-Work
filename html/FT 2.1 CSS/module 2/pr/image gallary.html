@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Gallery</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\1-copy6.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\ad1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\ad2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adam-4.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adams-peak.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adams-peak-1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adams-peak-2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\galagama-ella.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1-1.jpg" style="width:100%">
+
+  
+</div>
+  
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adaraKanda1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\ayur1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\ayur2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\ayur3.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\back1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\Biker.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\house1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image0.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image2.jpg" style="width:100%">
+    
+  </div> 
+   
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue1.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue2.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue3.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue4.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue5.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\cdd.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\cimage1.jpg" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\cover1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\elephants1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\elephants1-1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\elephants2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue2.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\blue3.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\elephants3.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\elephants4.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hotel1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hirikatuoya1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\glenrock.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\gems1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\gems.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\galagama-ella.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1-1.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hotel-banner.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hotel-banner-1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\house1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image0.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\image3.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adams-peak-2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\galagama-ella.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1-1.jpg" style="width:100%">
+
+  </div>
+
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo1.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo2.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo3.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo4.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo5.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\logo6.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\mylogo-1.png" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\adams-peak-2.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\galagama-ella.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1-1.jpg" style="width:100%">
+
+  </div>
+
+  <div class="column">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hotel1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\hirikatuoya1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\glenrock.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\gems1.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\gems.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\galagama-ella.jpg" style="width:100%">
+    <img src="D:\html\FT 2.1 CSS\module 2\pr\images\festive1-1.jpg" style="width:100%">
+  </div>
+
+</div>
+
+</body>
+</html>
+
+

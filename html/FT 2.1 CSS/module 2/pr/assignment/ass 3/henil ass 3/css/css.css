@@ -1,0 +1,289 @@
+
+/* ========Below is for header and container========== */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5px;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+                        'left Right right right right right';
+    gap: 10px;
+    
+
+}
+.header{
+    height: auto;
+    width: auto;
+    grid-area: header;
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    justify-content:space-around;
+    color: aliceblue;
+    flex-wrap: wrap;
+    
+
+}
+#logo{
+    height: 15em;
+    width: 20em;
+    padding: 1.5rem;
+    border-radius: 0px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 12px 10px;
+    gap: 8rem;
+}
+.menu li, a{
+    margin: 1rem;
+    font-size: large;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.right{
+    grid-area: right;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    justify-content: center;
+    display: flex;
+    padding: 6rem;
+}
+#home-right{
+    
+    height: 500px;
+    width: 700px;
+  
+   
+    
+   
+}
+.home-right p{
+     margin: 5rem;
+    font-size: 50px;
+   text-align: center;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px;
+
+}
+
+/* ========Below is for left bar========== */
+.left{
+    grid-area: left;
+    height: 150%;
+    background-color: rgb(82,82,82);
+    padding: 6px 25px;
+}
+.left ul li, .left ul li a{
+    font-size:medium;
+    font-weight:bold;
+    color: blue;
+}
+.left ul li{
+    margin:17px;
+    color: black;
+}
+
+/* ========Below is for right bar========== */
+.right{
+    grid-area: right;
+  
+    padding:10px ;
+    width: 100%;
+    /* padding: 5px 5px; */
+    background-color: aliceblue;
+   
+}
+.home-image{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(211, 218, 225);
+}
+#home-right{
+    width: 100%;
+    margin: 10px 200px;
+   
+    
+}
+ /* ========Below is for resume========== */
+ .full {
+	width: 80%;
+	max-width: 1000px;
+	min-height: 100px;
+	background-color: rgb(96, 95, 95);
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 2fr 4fr;
+    font-size: medium;
+}
+.cleft {
+	position: initial;
+	background-color: rgb(122, 122, 121);
+	padding: 40px;
+    font-size: medium;
+
+}
+.cright {
+	position: initial;
+	background-color: rgb(97, 100, 99);
+	padding: 40px;
+
+}
+.image, .Contact, .Skills, .Language, .Hobbies, .title,
+.Summary, .Experience, .Education, .project {
+	margin-bottom: 30px;
+    font-size: x-large;
+}
+.full h1 {
+	font-size: 30px;
+}
+.full h2{
+    font-size: 25px;
+}
+.full h3{
+    font-size: 20px;
+}
+.full b,li,td,th{
+    font-size: 13px;
+    font-weight: 100;
+}
+.full p{
+    font-size: 15px;
+}
+  /* ========Below is for report========== */
+
+table , th,td {
+                
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 250px;
+}
+/* =============================practice 2=============================== */
+.pnav ul{
+    display: flex;
+    background-color: rgb(51, 38, 21);
+    padding: 20px;
+    border-radius: 15px;
+    list-style: none;
+}
+.pnav a{
+    font-size: x-large;
+    margin: 25px;
+    color: rgb(225, 225, 231);
+    text-decoration: none;   
+}
+.htmlt{
+    padding: 50px;
+    font-size: large;
+    background-color: antiquewhite;
+}
+.depart ul,li,h1,h2{
+    margin-left: 22px;
+    margin-top: 12px;
+    font-size: medium;
+   line-height: 15px;
+}
+.htmlt>h1{
+font-size: xx-large;
+text-align: center;
+}
+.depart{
+    border-bottom:1px solid ;
+    margin: 20px 12px;
+}
+
+html h2{
+    background-color: rgba(0, 255, 255, 0.411);
+    padding: 12px;
+}
+.testm>h1{
+    background-color: rgba(216, 213, 19, 0.452);
+    padding: 12px;
+}
+.test>h1{
+    background-color: rgb(170, 22, 22);
+    padding: 12px;
+}
+
+/* ==========================================================================================================
+====================================Practice5===========================================================*/
+
+
+form div,input,p,radio,select,submit,reset{
+    font-size: 20px;
+}
+form,form p{
+    border: 1px solid;
+    padding: 20px;
+    width: 80%;
+    background-color: rgb(231, 241, 241);
+    margin: auto;
+  
+    
+}
+form p{
+   margin: 15px;
+   padding: 10px;
+    background-color: rgb(208, 43, 17);
+}
+
+/* =============================================================================== */
+/* =================================================day 5 Practice 1==================== */
+.rcont{
+    display: grid;
+    grid-template-areas: ' h h h h h'
+                        'l  m m m r ';
+    background-color: antiquewhite;
+}
+.rheader{
+    grid-area: h;
+    background-color: rgb(95, 100, 100);
+    font-size:50px;
+    text-align: center;
+    padding: 25px;
+    color: aliceblue;
+
+}
+.rleft{
+    grid-area: l;
+    padding: 22px;
+    background-color: rgb(217, 157, 206);
+   
+}
+.rleft li{
+    list-style: none;
+    font-size: x-large;
+    padding: 5px 5px;
+    margin: 74% 12px;
+   
+}
+.rleft a{
+    font-size: larger;
+    color: rgb(123, 137, 201);
+    text-decoration: none;
+}
+.rmain{
+    grid-area: m;
+    padding: 15px;
+    text-align: center;
+
+}
+.rmain h1{
+font-size: xx-large;
+margin: 12px;
+}
+.rright{
+    grid-area: r;
+    background-color: rgb(166, 188, 181);
+    padding: 15px;
+}
