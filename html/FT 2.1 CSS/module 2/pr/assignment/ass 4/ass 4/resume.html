@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume </title>
+</head>
+<style>
+     *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    .flex-container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .flex-item-left{
+        flex: 30%;
+        background-color: rgb(182, 167, 167);
+        font-size: x-large;
+        
+
+    }
+    .flex-item-right > div{
+            display: none;
+        }
+
+        .flex-item-right > div:target{
+     display: block;
+        }
+       
+    table,
+        th,
+        td {
+            border: 3px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: #cee4e4;
+            width: 70%;
+            height: 100%;
+        }
+    a:visited {
+            color: rgb(31, 34, 16);
+            background-color: transparent;
+            text-decoration: none;
+    }
+    a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+    .flex-item-right{
+        text-align: center;
+        flex: 70%;
+       
+    }
+    #img{
+       
+    }
+    .header{
+        
+            width: auto;
+            background-color: rgb(41, 40, 40);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            font-size: larger;
+    }
+    .details {
+            font-family: monospace;
+            flex: 30%;
+    }
+</style>
+<body>
+    <section>
+        <div class="header">
+            <div class="img">
+                <img src="person.png" alt="image" id="img">
+            </div>
+            <div class="right">
+                <h1>Henil Pithadiya</h1><br>
+                <p>Trainee Software Engineer</p>
+            </div>
+        </section>
+    
+    <div class="flex-container">
+       
+       <div class="flex-item-left">
+        <ul>
+            <li style="list-style: none;"> <a href="#contact" style="text-decoration: none;">Contact</a></li>
+            <li style="list-style: none;"> <a href="#Skills" style="text-decoration: none;">Skills</a></li>
+            <li style="list-style: none;"> <a href="#Education" style="text-decoration: none;">Education</a></li>
+            <li style="list-style: none;"> <a href="#Language" style="text-decoration: none;">Language</a></li>
+            <li style="list-style: none;"> <a href="#Projects" style="text-decoration: none;">Projects</a></li>
+        </ul>
+       </div>
+       <div class="flex-item-right">
+        <div id="contact">
+            <div class="title">
+                <h2 style="background-color:Gray;"><strong>Contact</strong></h2><br>
+            </div>
+            <div class="details">
+                <p><strong>Email id:</strong>pithadiyahenil13@gmail.com</p><br>
+                <p><strong>Mobile no :</strong>7283977305</p><br>
+                <p><strong>Linkedin ID :</strong>xxxxxxxxx</p><br>
+            </div>
+       </div>
+
+       <div id="Skills">
+        <div class="title">
+            <h2 style="background-color:Gray;">Skills</h2><br>
+        </div>
+        <div class="details">
+            <ul>
+                <li><strong>Programming Languages :</strong>
+                    Java, C++</li><br>
+                <li><strong>Frontend :</strong> HTML5, CSS3,
+                    JavaScript, React</li><br>
+                <li><strong>Backend :</strong> Node.js</li><br>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Education">
+        <div class="title">
+            <h2 style="background-color:Gray;">Education</h2><br>
+        </div>
+        <div class="details">
+            <table>
+                <tr>
+                    <th>University/college </th>
+                    <th>Passing year </th>
+                    <th>percentage/cgpa</th>
+                </tr>
+                <tr>
+                    <td>GTU</td>
+                    <td>2023</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td>GSHEB</td>
+                    <td>2019</td>
+                    <td>89%</td>
+                </tr>
+                <tr>
+                    <td>GSEB</td>
+                    <td>2017</td>
+                    <td>84%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="Language">
+        <div class="title">
+        <h2 style="background-color:Gray;">Language</h2>
+    </div>
+    <div class="details">
+        <ul>
+            <li>Gujarati</li>
+            <li>English</li>
+            <li>Hindi</li>
+        </ul>
+    </div>
+</div>
+
+<div id="Projects">
+    <div class="title">
+    <h2 style="background-color:Gray;">Projects</h2><br>
+</div>
+<div class="details">
+            
+    <ul>
+        <li>
+            <h2>Employee leave management system</h2>
+            <p>This project is based on html , css and php .</p>
+        </li>
+        <li>
+            <h2>Sensor based window security system</h2>
+            <p>This project is based on home security.</p>
+            <p>This is IOT based project</p>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+</body>

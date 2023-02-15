@@ -8,23 +8,22 @@
     <title> Resume </title>
 </head>
 <style>
-    /* *{
+     *{
             padding: 0;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             
         }
         .container{
-           display: grid;
-           grid-template-areas: 'header header header header header header'
-                                'menu menu header header header header' ;
-            gap: 10px;
+            display: flex;
             padding: 10px; 
+            flex-wrap: wrap;
         }
         #grid-container>div{
             text-align: center;
             padding: 20px 0;
             font-size:30px;
+            display: grid;
         }
         .header{
             height: 100px;
@@ -36,25 +35,38 @@
             color: aliceblue;
             padding: 15px;
             font-size: larger;
-    
-
         }
-     
-
+        .details {
+            font-family: monospace;
+            flex: 30%;
+        }
+        table,
+        th,
+        td {
+            border: 3px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            font-size: 1.5em;
+            text-align: center;
+            background-color: #cee4e4;
+            width: 70%;
+            height: 100%;
+        }
         .left{
-         grid-area: left;
-        height: 150%;
+        
         background-color: rgb(82, 82, 82);
         padding: 6px 25px;
-            
+            display: flex;
+            flex-wrap: wrap;
+            flex: 25%;
 
 
         }
-        #right{
+        .main{
            
             float: right ;
            display: grid;
            text-align: center;
+           grid-area: right;
         }
         #img{
             height:100px ;
@@ -62,9 +74,39 @@
             margin-left: 100px;
             float: left;
 
-        } */
+        } 
+        .main>div{
+            display: none;
+        }
 
-    @media only screen and (max-width: 600px) {
+        .main>div:target{
+     display: block;
+        }
+
+        a {
+            color: aliceblue;
+            padding: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        li {
+            padding: 0.4rem;
+        }
+
+        a:visited {
+            color: rgb(229, 241, 173);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+
+     @media only screen and (max-width: 600px) {
         * {
             padding: 0;
             margin: 0;
@@ -104,7 +146,7 @@
             grid-area: left;
             height: 150%;
             background-color: rgb(82, 82, 82);
-            padding: 4px 25px;
+           
             text-align: center;
             text-decoration: none;
             list-style: none;
@@ -134,9 +176,7 @@
             padding: 1.5rem;
         }
 
-        li {
-            padding: 0.2rem;
-        }
+        
 
         a:visited {
             color: rgb(229, 241, 173);
@@ -162,6 +202,8 @@
 
         .details {
             font-family: monospace;
+            grid-area: right;
+            
 
         }
 
@@ -188,13 +230,13 @@
 .main>div:target{
     display: block;
 }
-    }
+    } 
 </style>
 
 <body>
 
-    <div class="#container">
-
+    <div class=".container">
+    <section>
         <div class="header">
             <div class="img">
                 <img src="person.png" alt="image" id="img">
@@ -203,20 +245,21 @@
                 <h1>Henil Pithadiya</h1><br>
                 <p>Trainee Software Engineer</p>
             </div>
-
-
+        </section>
+    
 
             <div class="left">
                 <ul>
                     <li style="list-style: none;"> <a href="#contact" style="text-decoration: none;">Contact</a></li>
-                    <li style="list-style: none;"> <a href="#skills" style="text-decoration: none;">Skills</a></li>
-                    <li style="list-style: none;"> <a href="#education" style="text-decoration: none;">Education</a></li>
-                    <li style="list-style: none;"> <a href="#language" style="text-decoration: none;">Language</a></li>
-                    <li style="list-style: none;"> <a href="#projexts" style="text-decoration: none;">Projects</a></li>
+                    <li style="list-style: none;"> <a href="#Skills" style="text-decoration: none;">Skills</a></li>
+                    <li style="list-style: none;"> <a href="#Education" style="text-decoration: none;">Education</a></li>
+                    <li style="list-style: none;"> <a href="#Language" style="text-decoration: none;">Language</a></li>
+                    <li style="list-style: none;"> <a href="#Projects" style="text-decoration: none;">Projects</a></li>
                 </ul>
             </div>
         </div>
-
+    
+    
         <div class="main">
             <div id="contact">
                 <div class="title">
@@ -228,8 +271,6 @@
                     <p><strong>Linkedin ID :</strong>xxxxxxxxx</p><br>
                 </div>
             </div>
-
-
             <div id="Skills">
                 <div class="title">
                     <h2 style="background-color:Gray;">Skills</h2><br>
@@ -275,7 +316,37 @@
                     </table>
                 </div>
             </div>
-
+            <div id="Language">
+                <div class="title">
+				<h2 style="background-color:Gray;">Language</h2>
+            </div>
+            <div class="details">
+				<ul>
+                    <li>Gujarati</li>
+					<li>English</li>
+					<li>Hindi</li>
+				</ul>
+			</div>
+        </div>
+        <div id="Projects">
+            <div class="title">
+            <h2 style="background-color:Gray;">Projects</h2><br>
+        </div>
+        <div class="details">
+            
+            <ul>
+                <li>
+                    <h2>Employee leave management system</h2>
+                    <p>This project is based on html , css and php .</p>
+                </li>
+                <li>
+                    <h2>Sensor based window security system</h2>
+                    <p>This project is based on home security.</p>
+                    <p>This is IOT based project</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 
         </div>
